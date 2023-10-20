@@ -1,0 +1,13 @@
+.bg-gradient {
+  background-image: linear-gradient(
+    to right,
+    lighten(#7f4caf, 5),
+    $primary
+  ) !important;
+}
+.bg {
+  background-image: url("../images/login_bg.jpg");
+}
+.bg-opacity{
+    background-color: rgba(255, 255, 255, 0.5);
+}

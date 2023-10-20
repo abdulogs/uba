@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    .main-bg {
+        background-position: right top;
+        background-size: cover;
+        background-image: url("./images/login_bg.jpg");
+        background-repeat: no-repeat;
+
+    }
+</style>
+
+<body class="main-bg">
+    <header class="navbar bg-primary text-end border-bottom border-5 border-dark">
+        <a href="" class="py-3 d-inline-block ms-auto px-3">
+            <img src="./images/logo.png" alt="UBA Logo">
+        </a>
+    </header>
+    <main class="bg pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 py-5">
+                    <form id="login" class="card bg-opacity rounded-5 border-0 p-3">
+                        <div class="card-body bg-white rounded-5 py-5 px-3">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="fw-bold display-6 mb-3 text-center">
+                                        Account Login
+                                    </h2>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label for="email" class="fw-bold">Email</label>
+                                        <input type="text" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label for="password" class="fw-bold">Password</label>
+                                        <input type="text" class="form-control" id="password" name="password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 text-end py-2">
+                                    <a href="#!" class="fs-6">Forgot password?</a>
+                                </div>
+                                <div class="col-sm-12 text-center my-3">
+                                    <button class="btn btn-danger rounded-pill fw-bold px-4">Login</button>
+                                </div>
+                                <div class="col-sm-12 text-center py-2">
+                                    <a href="#!" class="fs-5 text-decoration-none">Set up New Account</a>
+                                </div>
+                                <p class="text-center text-muted">
+                                    Customer Service: phone - <a href="tel:+002250767320068"
+                                        class="text-dark">(002250767320068)</a>,
+                                    email - <a href="mailto:contact@ubagroupe.online"
+                                        class="text-dark">(contact@ubagroupe.online)</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent py-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <img src="./images/card.png" alt="">
+                                </div>
+                                <div class="col-sm-6 py-3">
+                                    <h3 class="fw-bold mb-2">
+                                        Real time banking transactions.
+                                    </h3>
+                                    <p class="m-0">
+                                        A simple, convenient alternative to cash or debit card payments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        const form = document.getElementById("login").addEventListener("submit", function (e) {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email == "johndoe@gmail.com" && password == "8504605") {
+                window.open("home.html")
+            } else {
+                alert(" Invalid credentials!")
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
